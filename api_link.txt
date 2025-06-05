@@ -1,1 +1,0 @@
-https://api.openweathermap.org/data/2.5/weather?unit=metric&q=NEW DELHI
