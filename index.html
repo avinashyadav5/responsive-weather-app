@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Check real-time weather updates for any city. Get temperature, humidity, wind speed, visibility, and more in a clean and responsive UI.">
+    <title>WEATHER FORECAST</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="heading">WEATHER FORECAST</h1>
+        <div class="search">
+            <div class="searchbox">
+                <input type="text" placeholder="Enter the city name...">
+            </div>
+            <div class="searchbtn">
+                <button>
+                    <span class="visually-hidden">Search</span>
+                    <img src="images/search.png" alt="Search Icon">
+                </button>
+            </div>
+        </div>
+        <div class="weather">
+
+            <div class="placeholder">
+                <h2>Welcome to Weather Forecast</h2>
+                <p>Please enter a city name to get the weather report.</p>
+            </div>
+
+            <div class="details">
+                <div class="weather-img">
+                    <img src="images/clouds.png" alt="">
+                    <p>Weather Description</p>
+                </div>
+                <div class="data">
+                    <h1>Temperature</h1>
+                    <h1 class="temp"> --°C </h1>
+                    <img src="images/map.png" class="map" alt="">
+                    <h1 class="city">
+                        
+                        City Name
+                    </h1>
+                    <H1 class="time">Time Zone  --:--</H1>
+                </div>
+            </div>
+            <div class="basic">
+                <div class="col">
+                    <img src="images/humidity.png" alt="">
+                    <p class="humidity">--%</p>
+                    <p>HUMIDITY</p>
+                </div>
+                <div class="col">
+                    <img src="images/wind.png" alt="">
+                    <p class="wind">-- Km/Hr</p>
+                    <p>WIND</p>
+                </div>
+                <div class="col">
+                    <img src="images/visibility.webp" alt="">
+                    <p class="visibility">-- m</p>
+                    <p>VISIBILITY</p>
+                </div>
+                <div class="col">
+                    <img src="images/pressure.png" alt="">
+                    <p class="pressure">-- hPa</p>
+                    <p>PRESSURE</p>
+                </div>
+                <div class="col">
+                    <img src="images/cloudiness.webp" alt="">
+                    <p class="cloud">--%</p>
+                    <p>CLOUDINESS</p>
+                </div>
+            </div>
+            <!-- <div class="airquality"> 
+                <div class="indexvalue">
+                    <img src="images/air index.jpg" alt="">
+                    <h1 class="value">
+                        Good
+                    </h1>
+                </div>
+                <img src="images/air quality.jpg" alt="">
+            </div> 
+            -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    min-height: 100vh; /* Viewport height */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 5rem;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+}
+
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    font-style: italic;
+    font-size: 4rem;
+    text-shadow: 1px 1px 2px #141716;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+.search {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.search input {
+    font-size: 2rem;
+    width: 100%;
+    max-width: 40rem;
+    padding: 1rem 3rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0.705);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+
+.search button {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 3px solid rgba(0, 0, 0, 0.705);
+}
+
+
+
+.placeholder {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    color: #ffffff;
+    font-size: 1.8rem;
+    margin: 3rem auto;
+    max-width: 60rem;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.146);
+}
+
+.placeholder h2 {
+    font-size: 2.6rem;
+    margin-bottom: 1rem;
+    color: #f0f8ff;
+}
+
+.placeholder p {
+    font-size: 1.7rem;
+    color: #eaeaea;
+}
+
+.weather.loaded .placeholder {
+    display: none;
+}
+
+.details {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    margin: 3rem 0;
+    padding: 3rem;
+    width: 100%;
+    height: auto;
+}
+
+.data {
+    font-size: 2rem;
+    padding: 2rem;
+    min-width: 20rem;
+    min-height: 12rem;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 1rem;
+    color: white;
+}
+
+.map {
+    width: 7rem;
+    height: 7rem;
+    object-fit: contain;
+}
+
+.temp {
+    font-size: 6rem;
+    margin: 1rem 0;
+}
+
+.city {
+    font-size: 3rem;
+}
+
+.time {
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+.weather-img img {
+    height: 20rem;
+    width: 100%;
+    object-fit: cover;
+    background-color: #B0E0E6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.weather-img p {
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 2.5rem;
+    background-color: #00feba56;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    max-width: 100%;
+}
+
+.basic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 17rem;
+}
+
+.col img {
+    width: 100%;
+    height: 10rem;
+    max-height: 18rem;
+    object-fit: contain;
+    background-color: #B0E0E6;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.col p {
+    width: 100%;
+    background-color: #42d9ea;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 0.3rem 0;
+    margin-top: 0.5rem;
+}
+
+/* ========== MEDIA QUERIES ========== */
+@media (max-width: 768px) {
+    .heading {
+        font-size: 3rem;
+    }
+
+    .temp {
+        font-size: 4rem;
+    }
+
+    .weather-img p {
+        font-size: 2rem;
+    }
+
+    .col {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .heading {
+        font-size: 2.5rem;
+    }
+
+    .search input {
+        font-size: 1.5rem;
+    }
+
+    .search button {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .temp {
+        font-size: 3.5rem;
+    }
+
+    .city,
+    .time {
+        font-size: 1.8rem;
+    }
+
+    .col {
+        max-width: 100%;
+    }
+
+    .weather-img p {
+        font-size: 1.7rem;
+    }
+}
