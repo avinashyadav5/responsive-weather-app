@@ -28,10 +28,8 @@ This project utilizes the [OpenWeatherMap API](https://openweathermap.org/api) t
 4.  **Create a file named `.env`** in the root directory of your project (the same level as `index.html` and `.gitignore`).
 5.  Add your API key to this file in the following format:
     ```
-    OPENWEATHER_API_KEY=YOUR_API_KEY_HERE
+    OPENWEATHER_API_KEY=https://api.openweathermap.org/data/2.5/weather?unit=metric&q=NEW DELHI
     ```
-    *(Replace `YOUR_API_KEY_HERE` with your actual key.)*
-
 **Note:** The `.env` file is included in the `.gitignore` to prevent your API key from being accidentally committed to your public repository.
 
 ## Installation and Local Setup
@@ -75,6 +73,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 ## Contact
 
-Avinash Yadav - [Your GitHub Profile Link Here, e.g., https://github.com/avinashyadav5] 
+Avinash Yadav - https://github.com/avinashyadav5 
 
-Project Link: [https://github.com/avinashyadav5/responsive-weather-app](https://github.com/avinashyadav5/responsive-weather-app)
+Project Link: https://github.com/avinashyadav5/responsive-weather-app
