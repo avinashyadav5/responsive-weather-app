@@ -1,4 +1,4 @@
-const apiKey = "0b4027a6c4ca49a0315c55841f9f9c11";
+const apiKey = "YOUR_NEW_OPENWEATHERMAP_API_KEY_HERE"; // Remember to get one from OpenWeatherMap
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather?unit=metric&q=NEW DELHI";
 const searchbox = document.querySelector(".searchbox input");
 const searchbtn = document.querySelector(".searchbtn button");
